@@ -1,0 +1,3 @@
+Demons weapon is a scythe
+Right click for scythe throw
+Left click for scythe slice

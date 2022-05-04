@@ -1,0 +1,3 @@
+As Demon Press B to summun a ice block and throw it
+As hunter press B to load Ice knives
+As wizard press Right Click to Shoot Ice Beam

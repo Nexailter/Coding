@@ -1,0 +1,2 @@
+Right click to cast element spell
+Left Click to cast regular no effect just damage spell

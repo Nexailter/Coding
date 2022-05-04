@@ -1,0 +1,2 @@
+Hunter can use a bow to shoot using left clickd
+Hunter can also use boomerangs and throwing knives using scroll wheel and right click

@@ -1,0 +1,3 @@
+As Demon press B to throw fire ball
+As hunter press B to load fire arrows
+As wizard press Right click to fire a fire Jet
