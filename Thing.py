@@ -2,10 +2,11 @@ from PIL import Image
 
 
 class demon:
-    def __init__ (self, attack, defense, speed, name, element):
+    def __init__ (self, attack, defense, speed, health, name, element):
         self.attack = attack
         self.defense = defense
         self.speed = speed
+        self.health = health
         self.name = name
         self.element = element
 
@@ -20,6 +21,9 @@ class demon:
     def getSpeed(self):
         return self.speed
 
+    def gethealth(self):
+        return self.health
+
     def getName(self):
         return self.name
     
@@ -29,6 +33,8 @@ class demon:
     def setAttack(self,a):
         self.attack = a
 
+    def sethealth(self,a):
+        self.health = a
     #Dislplay Image
     def character_image(self):
         image = Image.open("Demon.png")
@@ -106,3 +112,13 @@ TreyIsNotOP = Wizard(99.99999, 199.99999, 299.99999, 399.99999, 'Trey', 'Fire')
 TreyIsNotOP.setAttack(100)
 print (TreyIsNotOP.getAttack())
 TreyIsNotOP.character_image()
+
+
+class Hunter:
+    def __init__ (self, attack, defense, speed, health, name, element):
+        self.attack = attack
+        self.defense = defense
+        self.speed = speed
+        self.name = name
+        self.element = element
+        self.health = health
