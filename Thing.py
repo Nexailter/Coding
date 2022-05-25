@@ -1,7 +1,7 @@
 from PIL import Image
 
 
-class demon:
+class Demon:
     def __init__ (self, attack, defense, speed, health, name, element):
         self.attack = attack
         self.defense = defense
@@ -44,7 +44,7 @@ class demon:
 
 
 
-MathewIsOP = demon(100, 200, 300, 'Matthew', 'Earth')
+# MathewIsOP = demon(100, 200, 300, 'Matthew', 'Earth')
 
 # print (MathewIsOP.getAttack())
 

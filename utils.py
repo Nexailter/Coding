@@ -5,7 +5,7 @@ def check_class(character_class):
         return False
 
 def check_element(character_element):
-    if character_element == 'ice' or character_element == 'lightning' or character_element == 'fire' or character_element == 'earth': 
+    if character_element == 'Ice' or character_element == 'Lightning' or character_element == 'Fire' or character_element == 'Earth': 
         return True
     else:
         return False
