@@ -1,3 +1,8 @@
+import random
+
+
+
+
 def check_class(character_class):
     if character_class == "Hunter" or character_class == "Demon" or character_class == 'Wizard':
         return True
@@ -17,3 +22,13 @@ def check_username(character_username):
 
     else:
         return False
+
+
+
+def CriticalHit(damage):
+    chance = random.randint(1,5)
+    if(chance == 1):
+        damage == damage *3
+    else:
+        damage = damage
+    return damage

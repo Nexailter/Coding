@@ -102,16 +102,14 @@ class Wizard:
 
 
     #Dislplay Image
-    def character_image(self):
-        image = Image.open("Wizard.png")
-        image.show()
-
-TreyIsNotOP = Wizard(99.99999, 199.99999, 299.99999, 399.99999, 'Trey', 'Fire')
+    # def character_image(self):
+    #     image = Image.open("Wizard.png")
+    #     image.show()
 
 
-TreyIsNotOP.setAttack(100)
-print (TreyIsNotOP.getAttack())
-TreyIsNotOP.character_image()
+
+
+
 
 
 class Hunter:

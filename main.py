@@ -1,6 +1,6 @@
 import PySimpleGUI as pg
 from utils import*
-from Thing import*
+from characters import*
 close = 'Leave through here'
 
 done = 'Continue through the stages of life'
