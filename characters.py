@@ -111,7 +111,7 @@ class Monsters:
         self.attack = a
         
     def SetElement(self,a):
-        self.attack = A
+        self.attack = a
 
     def SetHealth(self,a):
         self.attack = a
