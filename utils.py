@@ -1,4 +1,5 @@
 import random
+import unittest
 
 
 
@@ -28,7 +29,14 @@ def check_username(character_username):
 def CriticalHit(damage):
     chance = random.randint(1,5)
     if(chance == 1):
-        damage == damage *3
+        return damage *3
     else:
-        damage = damage
-    return damage
+        return damage
+
+def calculateDamage(offense,defender):
+    damage = offense.getAttack() - defender.getDefense()
+    defender.SetHealth(defender.getHealth() - damage)
+
+def printStats(unit):
+    print('Health: ' + str(unit.getHealth()))
+    
