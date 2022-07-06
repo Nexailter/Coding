@@ -20,7 +20,6 @@ def check_username(character_username):
     bad_words = ['fuck','fuck off',' ','shit','asshole','penis']
     if character_username not in bad_words:
         return True
-
     else:
         return False
 
