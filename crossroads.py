@@ -10,3 +10,5 @@ if crossroad1 == 'left':
 else:
     attack1 = input ('you walk into the clearing and are imediatly face to face with an ork. would you like to, flee, use fists or yell. ')
 
+crossroad2 = input()
+
