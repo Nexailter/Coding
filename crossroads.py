@@ -9,3 +9,4 @@ if crossroad1 == 'left':
     print ('you walk into the forest and are surrounded by birds, its very peaceful, you continue on.')
 else:
     attack1 = input ('you walk into the clearing and are imediatly face to face with an ork. would you like to, flee, use fists or yell. ')
+

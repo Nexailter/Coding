@@ -72,7 +72,7 @@ class Hunter(Person):
 
 
 class Monsters:
-    def __init__(self,health,attack,defense,speed,name):
+    def __init__(self,health,attack,defense,speed,spawnrate,name):
         self.attack = attack
         self.defense = defense
         self.speed = speed
@@ -81,6 +81,9 @@ class Monsters:
 
 
     def getAttack(self):
+        return self.attack
+
+    def getspawnrate(self):
         return self.attack
     
     def getDefense(self):
@@ -108,6 +111,9 @@ class Monsters:
         self.attack = a
         
     def SetElement(self,a):
+        self.attack = a
+
+    def setspawnrate(self,a):
         self.attack = a
 
     def SetHealth(self,a):
@@ -141,3 +147,10 @@ class ork(Monsters):
 
     def arm_break(self):
         print("only does 5 damage but makes attack arm unusable")
+
+class merchant(Monsters):
+    def __inti__ (self,health,attack,defense,speed,name,):
+        super().__init__(health,attack,defense,speed,name,)
+
+    def heal_player(self):
+        print("adds 10 health to player")

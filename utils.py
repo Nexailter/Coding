@@ -39,3 +39,9 @@ def calculateDamage(offense,defender):
 def printStats(unit):
     print('Health: ' + str(unit.getHealth()))
     
+def entitySpawning():
+    chance = random.randint(0,10)
+    if(chance <= 1):
+        return True
+    else:
+        return False
