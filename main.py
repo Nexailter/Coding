@@ -36,6 +36,3 @@ while True:
         #     pg.popup('Your class is ' + values[0]+ '\n' + "your element is " + values[1] +'\n' + "your username is " + values[2])
         # else:
         #     pg.popup('Invalid Fields')
-    pg.popup('you will get to use your element and class on level 5')
-window.close()
-
