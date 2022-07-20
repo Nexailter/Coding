@@ -21,6 +21,7 @@ while True:
     if event == pg.WIN_CLOSED or event == close :
         break
     if event == done:
+        break
         # values is a list of user inputs
         # character_class = values[0]
         # character_element = values[1]
@@ -35,4 +36,3 @@ while True:
         #         character = Wizard(50,30,40,30,character_username,character_element )
         #     pg.popup('Your class is ' + values[0]+ '\n' + "your element is " + values[1] +'\n' + "your username is " + values[2])
         # else:
-        #     pg.popup('Invalid Fields')
