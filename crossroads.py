@@ -1,7 +1,3 @@
-
-
-
-
 # print ("you hear waves crashing but from all around you, you open your eyes and find yourself on a small island, you must find a way out.")
 
 # crossroad1 = input('you stand up and are at a crossroads, you can go left into a forest, or right into a clearing, which way would you like to go? ')
