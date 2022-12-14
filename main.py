@@ -1,38 +1,66 @@
-import PySimpleGUI as pg
-from utils import*
-from characters import*
-from crossroads import*
-close = 'Close'
-
-done = 'Continue'
+import utils
+import characters
+import random
+worldFile = open('world.txt','r')
+worldData = worldFile.readlines()
 
 
+#desert,forest,coast,mountains,snowy,populated village,lake
 
-layout =[[pg.Text("choose your class now"),pg.InputText()],
-        [pg.Text("pick an element..."),pg.InputText()],
-        [pg.Text('pick a username...'),pg.InputText()],
-        [pg.Button(close),pg.Button(done)]]
-        
 
-window = pg.Window("Graveyard of the six",layout)
+map = [
+        ['1a','1b','1c','1d','1e','1f'],
+        ['2a','2b','2c','2d','2e','2f'],
+        ['3a','3b','3c','3d','3e','3f'],
+        ['4a','4b','4c','4d','4e','4f'],
+        ['5a','5b','5c','5d','5e','5f'],
+        ['6a','6b','6c','6d','6e','6f']
+        ]
 
-while True:
-    event, values = window.read()
-    if event == pg.WIN_CLOSED or event == close :
-        break
-    if event == done:
-        break
-        # values is a list of user inputs
-        # character_class = values[0]
-        # character_element = values[1]
-        # character_username = values[2]
-        # if check_class(character_class) == True and check_element(character_element) == check_username(character_username) == True:
-        #     character = None
-        #     if character_class == 'Demon':
-        #         character = Demon(50,30,40,30,character_username,character_element )
-        #     if character_class == 'Hunter':
-        #         character = Hunter(50,30,40,30,character_username,character_element )
-        #     if character_class == 'Wizard':
-        #         character = Wizard(50,30,40,30,character_username,character_element )
-        #     pg.popup('Your class is ' + values[0]+ '\n' + "your element is " + values[1] +'\n' + "your username is " + values[2])
-        # else:
+#print (map)
+#1a 1b 2b 2c 2d 3d 3e 2e 1e
+             
+            
+       
+# in this coordinate system y axis is first x is last
+pos = [0,0]
+#health,attack,defense,speed,spawnrate,name
+def nav():
+        while True:
+                whichMonster = random.randint(0,4)
+                mon = characters.Monsters()
+                if whichMonster == 0:
+                        mon = (characters.Monsters())
+                elif whichMonster == 1:
+                        mon = (characters.Monsters())
+                elif whichMonster == 2:
+                        mon = (characters.Monsters())
+                elif whichMonster == 3:
+                        mon = (characters.Monsters())
+                elif whichMonster == 4:
+                        mon = (characters.Monsters())
+                if utils.entitySpawning():
+                       
+                        print('you have come across a' + mon.getName())
+                row = pos[0]
+                col = pos[1] #column
+                print('you are currently at zone ' + map[row][col])
+                direct = input('choose direction \nw = north\na = west\ns = south\nd = east\n')
+                if direct == 'd' and col < len(map) - 1:
+                        pos[1] = col + 1
+                elif  direct == 'a' and col > 0:
+                        pos[1] = col - 1
+                elif direct == 'w' and row > 0:
+                        pos[0] = row - 1
+                elif direct == 's' and row < len(map) - 1:
+                        pos[0] = row + 1
+                else:
+                        print("You've reached the ocean, theres nothing exept dark shadows among the waters.")
+
+nav()
+
+
+
+
+#  if l1[0] == l2[0]:
+#    return True

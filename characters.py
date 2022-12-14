@@ -1,4 +1,9 @@
-
+attack = 0
+defense = 0
+speed = 0
+health = 0
+element = ''
+name = ''
 
 
 class Person:
@@ -71,13 +76,14 @@ class Hunter(Person):
 
 
 
-class Monsters:
-    def __init__(self,health,attack,defense,speed,spawnrate,name):
-        self.attack = attack
-        self.defense = defense
-        self.speed = speed
-        self.health = health
-        self.name = name
+class Monsters():
+    def __init__(self):
+        self.attack = 10
+        self.defense = 10
+        self.speed = 10
+        self.spawnrate = 10
+        self.health = 10
+        self.name = 'monster'
 
 
     def getAttack(self):
@@ -102,22 +108,19 @@ class Monsters:
         self.attack = a
         
     def setDefense(self,a):
-        self.attack = a
+        self.defense = a
 
     def SetSpeed(self,a):
-        self.attack = a
+        self.speed = a
 
     def SetName(self,a):
-        self.attack = a
-        
-    def SetElement(self,a):
-        self.attack = a
+        self.name = a
 
     def setspawnrate(self,a):
-        self.attack = a
+        self.spawnrate = a
 
     def SetHealth(self,a):
-        self.attack = a
+        self.health = a
 
 
 class lochness_monster(Monsters):
@@ -154,3 +157,5 @@ class merchant(Monsters):
 
     def heal_player(self):
         print("adds 10 health to player")
+
+
