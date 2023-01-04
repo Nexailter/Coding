@@ -82,7 +82,7 @@ class Monsters():
         self.defense = 10
         self.speed = 10
         self.spawnrate = 10
-        self.health = 10
+        self.health = 40
         self.name = 'monster'
 
 

@@ -33,8 +33,3 @@ gridInfo([5,3])
 
 
 
-
-#codingBat
-#def not_string(str):
-#  return ('not ' + str)
-    
